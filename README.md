@@ -32,3 +32,15 @@ a = 'some text' # declare a string variable
 b = 123         # an integer
 c = True        # a boolean
 ```
+### If Statement
+def testConditional():
+    name = 'Darmawan'
+
+    if (name == "Darmawan"):
+        print("ini abi")
+    elif (name == "imam"):
+        print("ini elif")
+    else:
+        print("else")
+
+testConditional()
