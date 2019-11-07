@@ -32,6 +32,12 @@ a = 'some text' # declare a string variable
 b = 123         # an integer
 c = True        # a boolean
 ```
+
+### User Input
+```python
+input("Enter your name : ")
+```
+
 ### IF Statement
 ```python
 def testConditional():
@@ -54,6 +60,18 @@ def testLooping():
         
 testLooping()
 ```
+
+### While Looping
+```python
+def whileLoop():
+    i = 1
+    while i < 6:
+        print(i)
+        i+=1
+
+whileLoop()
+```
+
 ### Function with Parameter
 ```python
 def myFunc(inputValue):
