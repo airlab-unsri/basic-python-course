@@ -1,18 +1,12 @@
 list2d = []
 list2d.append([])
 list2d.append([])
-# [ [], [] ]
-# print(list2d)
 
 list2d[0].append(1)
 list2d[0].append(2)
-# [ [1, 2], [] ]
-# print(list2d)
 
 list2d[1].append(3)
 list2d[1].append(4)
-# [ [1, 2], [3, 4] ]
-# print(list2d)
 
 for y in list2d:
     for x in y:
