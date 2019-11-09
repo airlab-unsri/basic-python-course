@@ -2,6 +2,7 @@ class OrangGanteng:
     def __init__(__args__):
         pass
 
+
 plants = {}
 plants["durian"] = 10
 plants["rambutan"] = 30
