@@ -37,16 +37,42 @@ f = 3.5                                          # a float
 g = 2+3j                                         # a complex
 h = [1, 2, 3, 4, 5]                              # a list
 i = ("w","o","r","l","d")                        # a tuple
+# a dictionary
+j = {
+    "zoo": 1,
+    "zii": 999,
+    "zkk": {
+        "will":[20, 30, 40],
+        "sit": "dolar",
+        "amet": {
+            "zoo":1,
+            "zii":2
+        }
+    }
+}
 
 print(a)
+print(type(a))
 print(b)
+print(type(b))
 print(c)
-print(c)
+print(type(c))
 print(d)
+print(type(d))
 print(e)
+print(type(e))
 print(f)
+print(type(f))
 print(g)
+print(type(g))
 print(h)
+print(type(h))
 print(i)
-
+print(type(i))
+print(j)
+print(type(j))
 ```
+
+###User Input
+name = input("Masukkan Nama : ")
+print("Hello " +name+ " Selamat datang")
