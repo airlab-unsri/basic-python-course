@@ -73,8 +73,43 @@ print(j)
 print(type(j))
 ```
 
-###User Input
+### User Input
 ```python
 name = input("Masukkan Nama : ")
 print("Hello " +name+ " Selamat datang")
 ```
+### IF Statement
+```python
+def tebaknama(name):
+    nama = input("Siapa Kamu : ")
+    if (nama == "Ahmad"):
+        print("Saya Ahmad")
+    elif (nama == "Agus" ):
+        print("Saya Agus")
+    else:
+        print("Saya Temen nya Hasan")
+
+tebaknama("zzzzz")
+```
+## Looping
+### For
+```python
+def testLooping():
+    for a in range (0,5,+1):
+        print("nilai a : ", a+1)
+ 
+testLooping()
+```
+
+### While
+```python
+def whileLoop():
+    i = 1
+    while i < 6:
+        print("*_* " + " -_-")
+        i+=1
+
+whileLoop()
+```
+
+
