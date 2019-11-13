@@ -74,5 +74,7 @@ print(type(j))
 ```
 
 ###User Input
+```python
 name = input("Masukkan Nama : ")
 print("Hello " +name+ " Selamat datang")
+```
