@@ -3,7 +3,7 @@ class Orang:
         pass
 
 plants = {}
-plants["apel"] = 10
+plants["apel"] = 1
 plants["rambutan"] = 30
 plants[1] = "rambutan"
 
