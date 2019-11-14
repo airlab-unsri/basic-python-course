@@ -20,4 +20,4 @@ print("Reverse : ", friends)
 
 print()
 friends.remove("Mustofa")
-print("Remove Mustofa : ", friends)
+print("Remove Mustofa  : ", friends)
