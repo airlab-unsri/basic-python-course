@@ -1,39 +1,3 @@
-# basic-python-course
-
-## Week 1
-
-### How to print to standard output
-
-```python
-print('what to print')
-```
-
-### How to write comments
-
-#### Single Line
-
-```python
-# this is a single line comment.
-```
-
-#### Multi Line
-
-```python
-'''
-this is a multiline
-comment.
-'''
-```
-
-### How to declare variables
-
-```python
-a = 'some text' # declare a string variable
-b = 123         # an integer
-c = True        # a boolean
-```
-
-```python
 print("Hello World")
 
 def test_conditional():
@@ -67,9 +31,9 @@ def test_namespace():
     print("private val:",private_val)
     print("global var:",global_var)
     
-#test_conditional()
-#test_looping()
-#print(test_function_return_value(5))
+test_conditional()
+test_looping()
+print(test_function_return_value(5))
     
 def test_string_operator():
     full_string = "this is full string"
@@ -85,7 +49,7 @@ def test_string_operator():
     print(full_string.replace("full","some"))
     print(full_string.split(" "))
     
-#test_string_operator()
+test_string_operator()
     
 def test_list():
     mylist = ['Python_list','Java','10','20']
@@ -97,7 +61,7 @@ def test_list():
     mylist.append(30)
     print(mylist)
     
-#test_list()
+test_list()
     
 def string_formatting():
     name = "John"
@@ -107,7 +71,7 @@ def string_formatting():
     mylist = [1,2,3]
     print("A list : %s" % mylist)
     
-#string_formatting()
+string_formatting()
 
 def boolean_operators():
     isSunday = True
@@ -136,4 +100,3 @@ def boolean_operators():
         print('Today is holiday!!')
         
 boolean_operators()
-```
