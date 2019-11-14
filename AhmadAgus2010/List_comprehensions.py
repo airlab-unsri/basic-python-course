@@ -19,5 +19,5 @@ terbesar = max(a)
 print("Nilai maksimum dari a : ", terbesar)
 
 terkecil = min(a)
-print("Nilai minimum dari a : ", terkecil)
+print("Nilai minimum dari a :  ", terkecil)
 
