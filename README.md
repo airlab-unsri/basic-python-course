@@ -78,38 +78,100 @@ print(type(j))
 name = input("Masukkan Nama : ")
 print("Hello " +name+ " Selamat datang")
 ```
-### IF Statement
-```python
-def tebaknama(name):
-    nama = input("Siapa Kamu : ")
-    if (nama == "Ahmad"):
-        print("Saya Ahmad")
-    elif (nama == "Agus" ):
-        print("Saya Agus")
-    else:
-        print("Saya Temen nya Hasan")
 
-tebaknama("zzzzz")
+### Kondisi IF
+```python
+nilai = input("Masukkan nilai : ")
+nilai1 = int(nilai)
+if nilai1 > 80:
+    print("Selamat, Kamu dapat nilai A")
+elif (nilai1 > 70 and nilai1 <=80):
+    print("Selamat, kamu dapat nilai B")
+elif nilai1 > 60 and nilai1 <= 70:
+    print("selamat, kamu dapat nilai C")
+elif (nilai1 > 45 and nilai1 <= 60):
+    print("Selamat, kamu dapat nilai D")
+else:
+    print("Maaf, Kamu dapat nilai E. Kamu harus ikut ujian Remedial")
 ```
+
+### Kondisi IF bersarang
+```python
+nilai = input("Masukkan nilai : ")
+nilai1 = int(nilai)
+if nilai1 > 80:
+    print("Selamat, Kamu dapat nilai A")
+    if nilai1 >95 and nilai1 <100:
+        print("selamat, kamu dapat voucher pendidikan karena nilai kamu A")
+    if nilai1 == 100:
+        print("Selamat, kamu dapat kuliah gratis")
+elif (nilai1 > 70 and nilai1 <=80):
+    print("Selamat, kamu dapat nilai B")
+elif nilai1 > 60 and nilai1 <= 70:
+    print("selamat, kamu dapat nilai C")
+elif (nilai1 > 45 and nilai1 <= 60):
+    print("Selamat, kamu dapat nilai D")
+else:
+    print("Maaf, Kamu dapat nilai E. Kamu harus ikut ujian Remedial")
+```
+
+### Ternary Operator
+```python
+a = 100
+harga = True if a > 50 else False
+print(harga)
+
+b = 50 
+harga = True if b > 100 else False
+print(harga)
+
+c= 30 
+harga = True if c > 10 else False
+print(harga) 
+```
+
 ## Looping
-### For
+### Perulangan For Array
 ```python
-def testLooping():
-    for a in range (0,5,+1):
-        print("nilai a : ", a+1)
- 
-testLooping()
+a = [1, 2, 3, 4, 5]
+b = ("a", "b", "c", 6, "d", "e")
+c = ({"nama":"Ahmad Agus"}, {"NIM":"09021181722076"}, {"jurusan":"Teknik Inforamtika"})
+d = " List Tuple Dictionary"
+
+for test in a:
+    print(test)
+
+for test in b:
+    print(test)
+for test in c:
+    print(test)
+for test in d:
+    print(test)
 ```
 
-### While
+### Perulangan For 
 ```python
-def whileLoop():
-    i = 1
-    while i < 6:
-        print("*_* " + " -_-")
-        i+=1
+print("perulangan Menaik : ")
+for i in range(0,10):
+    print(i)
 
-whileLoop()
+print("Perulangan menurun : ")
+for i in range(10,0,-1):
+    print(i)
+
+print("cetak perulangan genap < 20 : ")
+for i in range(2,20,+2):
+    print(i)
+
+print("cetak perulangan kelipatan 5 yang < 50 :  ")
+for i in range(5,50,+5):
+    print(i)
 ```
 
-
+### Perulangan While
+```python
+i = 0
+while i < 10:
+    print("*_* " + " -_-")
+    i=i+1
+```
