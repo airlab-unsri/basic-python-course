@@ -1,0 +1,2 @@
+def loading():
+    print("loading...")
