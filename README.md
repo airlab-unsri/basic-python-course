@@ -28,87 +28,150 @@ comment.
 ### How to declare variables
 
 ```python
-a = 'some text' # declare a string variable
-b = 123         # an integer
-c = True        # a boolean
+a = 'ini String menggunakan tanda petik satu'    # declare a string variable
+b = 123                                          # an integer
+c = True                                         # a boolean
+d = "String Menggunakan Tanda Petik dua"         # declare a string variable menggunakaan tanda ("") petik dua  
+e = False                                        # a boolean
+f = 3.5                                          # a float
+g = 2+3j                                         # a complex
+h = [1, 2, 3, 4, 5]                              # a list
+i = ("w","o","r","l","d")                        # a tuple
+# a dictionary
+j = {
+    "zoo": 1,
+    "zii": 999,
+    "zkk": {
+        "will":[20, 30, 40],
+        "sit": "dolar",
+        "amet": {
+            "zoo":1,
+            "zii":2
+        }
+    }
+}
+
+print(a)
+print(type(a))
+print(b)
+print(type(b))
+print(c)
+print(type(c))
+print(d)
+print(type(d))
+print(e)
+print(type(e))
+print(f)
+print(type(f))
+print(g)
+print(type(g))
+print(h)
+print(type(h))
+print(i)
+print(type(i))
+print(j)
+print(type(j))
 ```
 
 ### User Input
 ```python
-input("Enter your name : ")
+name = input("Masukkan Nama : ")
+print("Hello " +name+ " Selamat datang")
 ```
 
-### IF Statement
+### Kondisi IF
 ```python
-def testConditional():
-    name = 'Darmawan'
-
-    if (name == "Darmawan"):
-        print("ini abi")
-    elif (name == "imam"):
-        print("ini elif")
-    else:
-        print("else")
-
-testConditional()
-```
-### FOR Looping
-```python
-def testLooping():
-    for x in range (0,5):
-        print("nilai x : ", x)
-        
-testLooping()
+nilai = input("Masukkan nilai : ")
+nilai1 = int(nilai)
+if nilai1 > 80:
+    print("Selamat, Kamu dapat nilai A")
+elif (nilai1 > 70 and nilai1 <=80):
+    print("Selamat, kamu dapat nilai B")
+elif nilai1 > 60 and nilai1 <= 70:
+    print("selamat, kamu dapat nilai C")
+elif (nilai1 > 45 and nilai1 <= 60):
+    print("Selamat, kamu dapat nilai D")
+else:
+    print("Maaf, Kamu dapat nilai E. Kamu harus ikut ujian Remedial")
 ```
 
-### While Looping
+### Kondisi IF bersarang
 ```python
-def whileLoop():
-    i = 1
-    while i < 6:
-        print(i)
-        i+=1
-
-whileLoop()
+nilai = input("Masukkan nilai : ")
+nilai1 = int(nilai)
+if nilai1 > 80:
+    print("Selamat, Kamu dapat nilai A")
+    if nilai1 >95 and nilai1 <100:
+        print("selamat, kamu dapat voucher pendidikan karena nilai kamu A")
+    if nilai1 == 100:
+        print("Selamat, kamu dapat kuliah gratis")
+elif (nilai1 > 70 and nilai1 <=80):
+    print("Selamat, kamu dapat nilai B")
+elif nilai1 > 60 and nilai1 <= 70:
+    print("selamat, kamu dapat nilai C")
+elif (nilai1 > 45 and nilai1 <= 60):
+    print("Selamat, kamu dapat nilai D")
+else:
+    print("Maaf, Kamu dapat nilai E. Kamu harus ikut ujian Remedial")
 ```
 
-### Function with Parameter
+### Ternary Operator
 ```python
-def myFunc(inputValue):
-    return inputValue * 4
-print(myFunc(3))
+a = 100
+harga = True if a > 50 else False
+print(harga)
+
+b = 50 
+harga = True if b > 100 else False
+print(harga)
+
+c= 30 
+harga = True if c > 10 else False
+print(harga) 
 ```
 
-### Global variable
+## Looping
+### Perulangan For Array
 ```python
-globalVar = 10
-def testNameSpace():
-    privateVar = 6
-    globalVar = 7
+a = [1, 2, 3, 4, 5]
+b = ("a", "b", "c", 6, "d", "e")
+c = ({"nama":"Ahmad Agus"}, {"NIM":"09021181722076"}, {"jurusan":"Teknik Inforamtika"})
+d = " List Tuple Dictionary"
 
-    print("Private Variable : ", privateVar)
-    print("Global Variable : ", globalVar)
+for test in a:
+    print(test)
 
-testNameSpace()
-print("Global Variable 2 : ", globalVar)
+for test in b:
+    print(test)
+for test in c:
+    print(test)
+for test in d:
+    print(test)
 ```
 
-### String Operator
+### Perulangan For 
 ```python
-def testStringOperator():
-    fullString = "this is full string"
-    tempString = "temp string"
-    upperString = "THIS IS UPPER"
-    lowerString = "this is lower"
+print("perulangan Menaik : ")
+for i in range(0,10):
+    print(i)
 
-    print(fullString + tempString) #concanation
-    print(fullString[3:7]) #print karakter antara kurang dari 3 dan kurang dari 7
-    print(upperString.lower())
-    print(lowerString.upper())
-    print("len : ", len(fullString))
-    print(fullString.strip("t"))
-    print(fullString.replace("full", "some"))
-    print(fullString.split("is"))
+print("Perulangan menurun : ")
+for i in range(10,0,-1):
+    print(i)
 
-testStringOperator()
+print("cetak perulangan genap < 20 : ")
+for i in range(2,20,+2):
+    print(i)
+
+print("cetak perulangan kelipatan 5 yang < 50 :  ")
+for i in range(5,50,+5):
+    print(i)
+```
+
+### Perulangan While
+```python
+i = 0
+while i < 10:
+    print("*_* " + " -_-")
+    i=i+1
 ```
