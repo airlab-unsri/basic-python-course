@@ -15,3 +15,7 @@ print(a_tuple)
 (fruit_1, fruit_2) = a_tuple  # unpack a tuple values into variables
 print(fruit_1)
 print(fruit_2)
+
+(buah_1, buah_2) = ('mangga', 'apel')  # pack & unpack at the same time
+print(buah_1)
+print(buah_2)
