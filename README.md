@@ -167,11 +167,3 @@ print("cetak perulangan kelipatan 5 yang < 50 :  ")
 for i in range(5,50,+5):
     print(i)
 ```
-
-### Perulangan While
-```python
-i = 0
-while i < 10:
-    print("*_* " + " -_-")
-    i=i+1
-```
